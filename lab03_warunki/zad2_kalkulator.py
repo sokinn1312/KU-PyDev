@@ -8,3 +8,24 @@
 #   - inny operator         -> "Nieznany operator"
 
 # TODO: Twój kod poniżej
+
+liczba1 = float(input("Podaj pierwszą liczbę: "))
+operator = input("Podaj operator (+, -, *, /): ")
+liczba2 = float(input("Podaj drugą liczbę: "))
+if operator == "+":
+    wynik = liczba1 + liczba2
+    print(f"{liczba1} + {liczba2} = {wynik}")
+elif operator == "-":
+    wynik = liczba1 - liczba2
+    print(f"{liczba1} - {liczba2} = {wynik}")
+elif operator == "*":
+    wynik = liczba1 * liczba2
+    print(f"{liczba1} * {liczba2} = {wynik}")
+elif operator == "/":
+    if liczba2 == 0:
+        print("Nie można dzielić przez zero")
+    else:
+        wynik = liczba1 / liczba2
+        print(f"{liczba1} / {liczba2} = {wynik}")
+else:
+    print("Nieznany operator")
